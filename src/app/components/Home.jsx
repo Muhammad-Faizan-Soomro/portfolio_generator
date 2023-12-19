@@ -1372,7 +1372,13 @@ export default function Home({
                             <div class="input-control">
                                 <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
                             </div>
-                            <input type="submit" value="Send">
+                            <div class="btn-con">
+                                <a class="main-btn">
+                                    <input class="btn-text" type="submit" value="">Send</input>
+                                    <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                                </a>
+                            </div>
+                            
                         </form>
                     </div>
                 </div>
