@@ -1,6 +1,6 @@
 import React from "react";
 
-function Code() {
+export default function Code() {
   return (
     <div className="Code">
       <pre className="codefile">
@@ -1586,4 +1586,3 @@ function Code() {
   );
 }
 
-export default Code;
