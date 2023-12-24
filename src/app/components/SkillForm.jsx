@@ -27,7 +27,7 @@ export default function SkillForm() {
         />
         <button
         onClick={submitSkill}
-        >Done</button>
+        >Add Skill</button>
         {/* <button onClick={removeExp}>Remove</button> */}
     </div>
   )

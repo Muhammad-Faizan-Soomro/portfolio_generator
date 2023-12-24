@@ -50,7 +50,7 @@ export default function ExpForm() {
         />
         <button
         onClick={submitExp}
-        >Done</button>
+        >Add Work Experience</button>
         {/* <button onClick={removeExp}>Remove</button> */}
     </div>
   )

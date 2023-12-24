@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 
 export default function Home({
   fullName,
+  profilePicUrl,
   workDesc,
   selfDesc,
   cvLink,
@@ -1151,7 +1152,7 @@ export default function Home({
             <div class="left-header">
                 <div class="h-shape"></div>
                 <div class="image">
-                    <img src="img/hero.png" alt="PROFILE PIC AYEGI IDHER">
+                    <img src=${profilePicUrl} alt="PROFILE PIC AYEGI IDHER">
                 </div>
             </div>
             <div class="right-header">

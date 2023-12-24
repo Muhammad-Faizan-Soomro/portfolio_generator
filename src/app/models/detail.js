@@ -12,6 +12,9 @@ export const DetailSchema = new Schema({
   fullName: {
     type: String
   },
+  profilePicUrl: {
+    type: String
+  },
   workDesc: {
     type: String
   },
@@ -21,6 +24,7 @@ export const DetailSchema = new Schema({
   cvLink: {
     type: String,
   },
+  image: String,
   aboutMe: {
     type: String
   },
