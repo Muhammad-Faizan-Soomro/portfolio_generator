@@ -23,7 +23,7 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
-export default function page() {
+export default function Page() {
   return (
     <>
       <Script id="show-banner">
