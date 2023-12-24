@@ -147,7 +147,7 @@ export default function Page() {
 
     setCvLink(uploadedCvData.secure_url);
 
-    let result = await fetch("@/app/api/detail", {
+    let result = await fetch("/api/detail", {
       method: "POST",
       body: JSON.stringify({
         user_id,
@@ -330,7 +330,7 @@ export default function Page() {
       <div>
         <h1>Experience Added</h1>
         {experience.map((item) => (
-          <div>
+          <div key={item.startDate}>
             <p>{item.companyName}</p>
             <p>{item.jobTitle}</p>
             <p>{item.jobDescription}</p>
@@ -344,7 +344,7 @@ export default function Page() {
       <div>
         <h1>Projects Added</h1>
         {projects.map((item) => (
-          <div>
+          <div key={item.liveLink}>
             <p>{item.image}</p>
             <p>{item.githubLink}</p>
             <p>{item.liveLink}</p>
@@ -358,7 +358,7 @@ export default function Page() {
       <div>
         <h1>Skills Added</h1>
         {skills.map((item) => (
-          <div>
+          <div key={item.name}>
             <p>{item.name}</p>
             <p>{item.percentage}</p>
             <button onClick={() => dispatch(removeSkill(item.id))}>
