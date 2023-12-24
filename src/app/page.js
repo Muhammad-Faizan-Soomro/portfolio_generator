@@ -31,7 +31,7 @@ import { removeSkill } from "./redux/skillSlice";
 import Home from "./components/Home";
 import { useForm } from "react-hook-form";
 
-export default function page() {
+export default function Page() {
   const { register, handleSubmit } = useForm();
 
   const dispatch = useDispatch();
